@@ -1,0 +1,42 @@
+.box {
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+
+  .alert {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 13px;
+
+    p {
+      margin: 5px 0 0 0;
+    }
+  }
+}
+
+.alertAnimation-enter {
+  opacity: 0;
+  transform: translateX(100%);
+
+  &-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 250ms linear;
+  }
+}
+
+.alertAnimation-exit {
+  opacity: 1;
+  transform: translateX(0);
+
+  &-active {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 250ms linear;
+  }
+}

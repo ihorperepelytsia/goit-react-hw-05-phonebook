@@ -1,0 +1,53 @@
+.list-enter {
+  transform: translateX(-100%);
+
+  &-active {
+    transform: translateX(0);
+    transition: all 250ms linear;
+  }
+}
+
+.list-exit {
+  transform: translateX(0);
+
+  &-active {
+    transform: translateX(-100%);
+    transition: all 250ms linear;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 330px;
+  text-align: center;
+}
+.user {
+  font-size: 18px;
+  box-shadow: 2px 2px 5px lightgrey;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+
+  &-name {
+    margin-left: 15px;
+  }
+
+  &-number {
+    margin-left: 80px;
+  }
+
+  button {
+    width: 28px;
+    height: 28px;
+    margin: 14px 15px 0 0;
+    border: none;
+    color: white;
+    font-size: 18px;
+    background: red;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,45 @@
+.contact-filter {
+  width: 300px;
+  box-shadow: 5px 5px 10px lightgrey;
+  padding: 15px;
+  margin-bottom: 24px;
+
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+
+    input {
+      width: 97%;
+      margin-top: 5px;
+      border: 1px solid lightgrey;
+      border-radius: 4px;
+      padding-left: 4px;
+      outline-color: blue;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.filter-enter {
+  transform: translateX(-100%);
+
+  &-active {
+    transform: translateX(0);
+    transition: all 250ms linear;
+  }
+}
+
+.filter-exit {
+  transform: translateX(0);
+
+  &-active {
+    transform: translateX(-100%);
+    transition: all 250ms linear;
+  }
+}
